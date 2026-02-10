@@ -39,7 +39,7 @@ const CTA = () => {
               Ready to Transform Your IT Infrastructure?
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Let's discuss how Tech Capital can help your business grow with innovative IT solutions
+              Let&apos;s discuss how Tech Capital can help your business grow with innovative IT solutions
             </p>
           </motion.div>
 

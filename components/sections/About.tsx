@@ -32,7 +32,7 @@ const About = () => {
                 </p>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                   Our team of certified experts works tirelessly to ensure your IT infrastructure 
-                  is secure, scalable, and optimized for success. We don't just provide services; 
+                  is secure, scalable, and optimized for success. We don&apos;t just provide services; 
                   we build lasting partnerships with our clients.
                 </p>
                 
