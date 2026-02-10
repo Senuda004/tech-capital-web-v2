@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -105,35 +106,19 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative hidden lg:block"
           >
-            <div className="relative w-full h-[500px]">
-              {/* Floating Cards */}
-              <motion.div
-                animate={{ y: [0, -20, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-10 right-10 w-64 h-64 bg-white rounded-2xl shadow-2xl p-6 transform rotate-6"
-              >
-                <div className="w-12 h-12 bg-primary rounded-lg mb-4"></div>
-                <div className="h-3 bg-gray-200 rounded mb-2"></div>
-                <div className="h-3 bg-gray-200 rounded w-3/4"></div>
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [0, 20, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute bottom-20 left-0 w-72 h-72 bg-white rounded-2xl shadow-2xl p-6 transform -rotate-6"
-              >
-                <div className="w-16 h-16 bg-primary-200 rounded-full mb-4"></div>
-                <div className="h-4 bg-gray-200 rounded mb-3"></div>
-                <div className="h-4 bg-gray-200 rounded mb-3 w-5/6"></div>
-                <div className="h-4 bg-gray-200 rounded w-4/6"></div>
-              </motion.div>
-
-              <motion.div
-                animate={{ scale: [1, 1.05, 1] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl shadow-2xl"
-              ></motion.div>
-            </div>
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="relative w-full h-[600px]"
+            >
+              <Image
+                src="/Hero.png"
+                alt="IT Team working together"
+                fill
+                className="object-contain"
+                priority
+              />
+            </motion.div>
           </motion.div>
         </div>
       </div>
