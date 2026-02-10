@@ -39,11 +39,11 @@ const Header = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 lg:px-6 max-w-7xl">
+        <div className="flex items-center justify-between h-20 py-2">
           {/* Logo */}
-          <Link href="#home" className="flex items-center space-x-3 group">
-            <div className="relative w-12 h-12 transition-transform group-hover:scale-110">
+          <Link href="#home" className="flex items-center space-x-2.5 group">
+            <div className="relative w-10 h-10 transition-transform group-hover:scale-110">
               <Image
                 src="/logo.svg"
                 alt="Tech Capital Managed Services"
@@ -56,15 +56,15 @@ const Header = () => {
               />
             </div>
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-lg font-bold text-gray-900 leading-tight">
                 Tech Capital
               </h1>
-              <p className="text-xs text-gray-600">Managed Services</p>
+              <p className="text-[10px] text-gray-600">Managed Services</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -79,7 +79,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button asChild size="lg">
+            <Button asChild size="default">
               <Link href="#contact">Get Started</Link>
             </Button>
           </div>

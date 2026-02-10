@@ -15,7 +15,7 @@ const CTA = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-700 text-white relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-primary-600 to-primary-700 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -27,7 +27,7 @@ const CTA = () => {
       <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-float"></div>
       <div className="absolute bottom-10 right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-float" style={{ animationDelay: "2s" }}></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 lg:px-6 relative z-10 max-w-7xl">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -35,7 +35,7 @@ const CTA = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
               Ready to Transform Your IT Infrastructure?
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">

@@ -14,14 +14,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-16 bg-white">
+      <div className="container mx-auto px-4 lg:px-6 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <AnimatedSection>
             <div className="relative">
               <div className="relative z-10">
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                   Leading the Way in{" "}
                   <span className="text-primary">IT Excellence</span>
                 </h2>
@@ -66,7 +66,7 @@ const About = () => {
                     <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <Icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-4xl font-bold text-gray-900 mb-2">{stat.value}</h3>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</h3>
                     <p className="text-gray-600 font-medium">{stat.label}</p>
                   </motion.div>
                 );

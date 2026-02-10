@@ -34,13 +34,21 @@ const Contact = () => {
     setSubmitStatus("idle");
 
     try {
-      // Initialize EmailJS with your public key
-      // Replace these with your actual EmailJS credentials from .env.local
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "your_service_id";
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "your_template_id";
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "your_public_key";
+      // Get EmailJS credentials from environment variables
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-      await emailjs.send(
+      // Validate credentials
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error("EmailJS credentials are not configured");
+      }
+
+      // Initialize EmailJS
+      emailjs.init(publicKey);
+
+      // Send email using EmailJS
+      const result = await emailjs.send(
         serviceId,
         templateId,
         {
@@ -49,10 +57,11 @@ const Contact = () => {
           phone: formData.phone,
           company: formData.company,
           message: formData.message,
-        },
-        publicKey
+          to_name: "Tech Capital Team", // This will be used in your template
+        }
       );
 
+      console.log("Email sent successfully:", result);
       setSubmitStatus("success");
       setFormData({
         name: "",
@@ -61,9 +70,19 @@ const Contact = () => {
         company: "",
         message: "",
       });
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus("idle");
+      }, 5000);
     } catch (error) {
       console.error("Error sending email:", error);
       setSubmitStatus("error");
+      
+      // Reset error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus("idle");
+      }, 5000);
     } finally {
       setIsSubmitting(false);
     }
@@ -91,15 +110,15 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section id="contact" className="py-16 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-primary-100 rounded-full filter blur-3xl opacity-20"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary-200 rounded-full filter blur-3xl opacity-20"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 lg:px-6 relative z-10 max-w-7xl">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Get in <span className="text-primary">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

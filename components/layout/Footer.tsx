@@ -38,12 +38,12 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 lg:px-6 py-10 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <Link href="#home" className="flex items-center space-x-3 mb-4">
-              <div className="relative w-12 h-12">
+            <Link href="#home" className="flex items-center space-x-2.5 mb-4">
+              <div className="relative w-10 h-10">
                 <Image
                   src="/logo.svg"
                   alt="Tech Capital Managed Services"

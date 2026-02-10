@@ -37,7 +37,7 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -45,7 +45,7 @@ const Stats = () => {
         }}></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 lg:px-6 relative z-10 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
@@ -70,7 +70,7 @@ const Stats = () => {
                   whileInView={{ scale: 1 }}
                   transition={{ delay: index * 0.1 + 0.3, type: "spring" }}
                   viewport={{ once: true }}
-                  className="text-5xl font-bold mb-2"
+                  className="text-4xl font-bold mb-2"
                 >
                   {stat.value}
                 </motion.h3>

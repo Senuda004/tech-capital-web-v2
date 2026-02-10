@@ -22,11 +22,11 @@ const ClientCompanies = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4 lg:px-6 max-w-7xl">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Trusted by <span className="text-primary">Industry Leaders</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -61,15 +61,15 @@ const ClientCompanies = () => {
         <AnimatedSection delay={0.4}>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <h3 className="text-4xl font-bold text-primary mb-2">500+</h3>
+              <h3 className="text-3xl font-bold text-primary mb-2">500+</h3>
               <p className="text-gray-600 font-medium">Enterprise Clients</p>
             </div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold text-primary mb-2">25+</h3>
+              <h3 className="text-3xl font-bold text-primary mb-2">25+</h3>
               <p className="text-gray-600 font-medium">Industries Served</p>
             </div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold text-primary mb-2">98%</h3>
+              <h3 className="text-3xl font-bold text-primary mb-2">98%</h3>
               <p className="text-gray-600 font-medium">Client Retention Rate</p>
             </div>
           </div>

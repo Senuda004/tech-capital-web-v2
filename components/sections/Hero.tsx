@@ -14,16 +14,16 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center hero-gradient pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center hero-gradient pt-16 pb-16 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: "2s" }}></div>
-        <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: "4s" }}></div>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
+        <div className="absolute top-40 right-10 w-64 h-64 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute -bottom-8 left-1/2 w-64 h-64 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: "4s" }}></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 lg:px-6 relative z-10 max-w-7xl">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -34,9 +34,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-block mb-4"
+              className="inline-block mb-3"
             >
-              <span className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold">
+              <span className="bg-primary-100 text-primary-700 px-3 py-1.5 rounded-full text-sm font-semibold">
                 🚀 Leading IT Solutions Provider
               </span>
             </motion.div>
@@ -45,7 +45,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-5 leading-tight"
             >
               Transform Your Business with{" "}
               <span className="text-primary">Tech Capital</span>
@@ -55,7 +55,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-xl text-gray-600 mb-8 leading-relaxed"
+              className="text-lg text-gray-600 mb-6 leading-relaxed"
             >
               Empowering enterprises with cutting-edge managed IT services, cloud solutions, 
               and cybersecurity expertise. Your trusted partner in digital transformation.
@@ -65,14 +65,14 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 mb-12"
+              className="flex flex-col sm:flex-row gap-3 mb-8"
             >
-              <Button asChild size="xl">
+              <Button asChild size="lg">
                 <Link href="#contact">
-                  Get Started Today <ArrowRight className="ml-2 w-5 h-5" />
+                  Get Started Today <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="xl">
+              <Button asChild variant="outline" size="lg">
                 <Link href="#services">Explore Services</Link>
               </Button>
             </motion.div>
@@ -82,16 +82,16 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-6"
+              className="flex flex-wrap gap-5"
             >
               {features.map((feature, index) => {
                 const Icon = feature.icon;
                 return (
                   <div key={index} className="flex items-center space-x-2">
-                    <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-primary" />
+                    <div className="w-9 h-9 rounded-full bg-primary-100 flex items-center justify-center">
+                      <Icon className="w-4 h-4 text-primary" />
                     </div>
-                    <span className="text-gray-700 font-medium">{feature.text}</span>
+                    <span className="text-gray-700 font-medium text-sm">{feature.text}</span>
                   </div>
                 );
               })}
@@ -105,7 +105,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative hidden lg:block"
           >
-            <div className="relative w-full h-[600px]">
+            <div className="relative w-full h-[500px]">
               {/* Floating Cards */}
               <motion.div
                 animate={{ y: [0, -20, 0] }}
