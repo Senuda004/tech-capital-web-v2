@@ -132,12 +132,12 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                  Let's Start a Conversation
+                  Let&apos;s Start a Conversation
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-8">
                   Whether you need IT support, cloud solutions, or cybersecurity services, 
                   our team of experts is here to help. Reach out to us through any of the 
-                  following channels, and we'll get back to you within 24 hours.
+                  following channels, and we&apos;ll get back to you within 24 hours.
                 </p>
               </div>
 
@@ -281,7 +281,7 @@ const Contact = () => {
                   {submitStatus === "success" && (
                     <div className="flex items-center space-x-2 text-green-600 bg-green-50 p-4 rounded-lg">
                       <CheckCircle2 className="w-5 h-5" />
-                      <span>Thank you! We'll get back to you within 24 hours.</span>
+                      <span>Thank you! We&apos;ll get back to you within 24 hours.</span>
                     </div>
                   )}
 

@@ -74,7 +74,7 @@ const Projects = () => {
             Our <span className="text-primary">Success Stories</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our portfolio of successful projects and see how we've helped businesses achieve their goals
+            Explore our portfolio of successful projects and see how we&apos;ve helped businesses achieve their goals
           </p>
         </AnimatedSection>
 

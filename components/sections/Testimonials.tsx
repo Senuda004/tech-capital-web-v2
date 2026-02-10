@@ -71,7 +71,7 @@ const Testimonials = () => {
             What Our <span className="text-primary">Clients Say</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it - hear from the businesses we've helped transform
+            Don&apos;t just take our word for it - hear from the businesses we&apos;ve helped transform
           </p>
         </AnimatedSection>
 
@@ -101,7 +101,7 @@ const Testimonials = () => {
 
                   {/* Testimonial Content */}
                   <p className="text-gray-700 mb-6 leading-relaxed italic">
-                    "{testimonial.content}"
+                    &ldquo;{testimonial.content}&rdquo;
                   </p>
 
                   {/* Author Info */}

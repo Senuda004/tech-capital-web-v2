@@ -30,7 +30,7 @@ const ClientCompanies = () => {
             Trusted by <span className="text-primary">Industry Leaders</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're proud to partner with some of the world's most innovative companies
+            We&apos;re proud to partner with some of the world&apos;s most innovative companies
           </p>
         </AnimatedSection>
 
@@ -47,6 +47,7 @@ const ClientCompanies = () => {
               className="flex items-center justify-center"
             >
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-300 w-full h-24 flex items-center justify-center border border-gray-200 hover:border-primary-200">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={company.logo}
                   alt={company.name}
