@@ -7,6 +7,7 @@ import ClientCompanies from "@/components/sections/ClientCompanies";
 import Stats from "@/components/sections/Stats";
 import Contact from "@/components/sections/Contact";
 import CTA from "@/components/sections/CTA";
+import FAQ from "@/components/sections/FAQ";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Testimonials />
       {/* <ClientCompanies /> */}
       <CTA />
+      <FAQ />
       <Contact />
     </>
   );
