@@ -17,13 +17,12 @@ const Footer = () => {
     ],
     company: [
       { name: "About Us", href: "#about" },
-      { name: "Our Projects", href: "#projects" },
       { name: "Testimonials", href: "#testimonials" },
+      { name: "FAQ", href: "#faq" },
       { name: "Contact", href: "#contact" },
     ],
     resources: [
       { name: "Blog", href: "#" },
-      { name: "Case Studies", href: "#projects" },
       { name: "Privacy Policy", href: "#" },
       { name: "Terms of Service", href: "#" },
     ],
