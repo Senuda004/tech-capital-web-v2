@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   description: "Leading IT solutions provider offering managed services, cloud infrastructure, cybersecurity, and digital transformation consulting.",
   keywords: ["IT services", "managed services", "cloud solutions", "cybersecurity", "IT consulting"],
   authors: [{ name: "Tech Capital Managed Services" }],
+  icons: {
+    icon: "/Fevicon.svg",
+  },
   openGraph: {
     title: "Tech Capital Managed Services",
     description: "Leading IT solutions provider offering comprehensive managed services",

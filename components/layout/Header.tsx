@@ -45,7 +45,7 @@ const Header = () => {
           <Link href="#home" className="flex items-center space-x-2.5 group">
             <div className="relative w-10 h-10 transition-transform group-hover:scale-110">
               <Image
-                src="/logo.svg"
+                src="/Fevicon.svg"
                 alt="Tech Capital Managed Services"
                 fill
                 className="object-contain"
