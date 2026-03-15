@@ -92,8 +92,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      content: "+94 77 386 1585",
+      link: "tel:+94773861585",
     },
     {
       icon: Mail,
@@ -104,7 +104,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Business Ave, Tech City, TC 12345",
+      content: "5 B 65 R, Raddolugama, Sri Lanka",
       link: "https://maps.google.com",
     },
   ];
@@ -185,9 +185,8 @@ const Contact = () => {
               >
                 <h4 className="font-semibold text-gray-900 mb-3">Business Hours</h4>
                 <div className="space-y-2 text-gray-600">
-                  <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 2:00 PM</p>
-                  <p>Sunday: Closed</p>
+                  <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+                  <p>Saturday - Sunday: Closed</p>
                   <p className="text-primary font-medium mt-2">24/7 Emergency Support Available</p>
                 </div>
               </motion.div>

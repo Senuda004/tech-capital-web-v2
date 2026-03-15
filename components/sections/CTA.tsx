@@ -94,7 +94,7 @@ const CTA = () => {
             viewport={{ once: true }}
             className="mt-8 text-white/80 text-sm"
           >
-            Join 500+ businesses that trust Tech Capital for their IT needs
+            Join 50+ businesses that trust Tech Capital for their IT needs
           </motion.p>
         </div>
       </div>

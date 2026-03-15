@@ -5,65 +5,66 @@ import { motion } from "framer-motion";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
-  Cloud, 
+  Code2,
+  Smartphone,
+  Globe,
+  PenTool,
+  Cloud,
   Shield, 
-  Database, 
-  Cpu, 
-  Network, 
+  Wrench,
   HeadphonesIcon,
-  Settings,
-  FileSearch
+  Settings
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
+      icon: Code2,
+      title: "Software Development",
+      description: "Custom software solutions built to streamline operations, automate workflows, and support business growth.",
+      features: ["Custom Applications", "Business Automation", "System Integration"],
+    },
+    {
+      icon: Smartphone,
+      title: "Mobile App Development",
+      description: "Native and cross-platform mobile apps designed for performance, usability, and long-term scalability.",
+      features: ["iOS Apps", "Android Apps", "Cross-Platform Solutions"],
+    },
+    {
+      icon: Globe,
+      title: "Web Development",
+      description: "Modern, responsive websites and web platforms built to strengthen your digital presence and conversion flow.",
+      features: ["Business Websites", "Web Applications", "E-commerce Solutions"],
+    },
+    {
+      icon: PenTool,
+      title: "UI/UX Designing",
+      description: "User-focused interface and experience design that improves usability, engagement, and product clarity.",
+      features: ["Wireframing", "Prototype Design", "User Experience Audits"],
+    },
+    {
       icon: Cloud,
-      title: "Cloud Solutions",
-      description: "Migrate, manage, and optimize your cloud infrastructure with AWS, Azure, and Google Cloud expertise.",
-      features: ["Cloud Migration", "Infrastructure Management", "Cost Optimization"],
+      title: "Cloud Services",
+      description: "Cloud migration, deployment, and infrastructure management across leading platforms and environments.",
+      features: ["Cloud Migration", "Infrastructure Setup", "Performance Optimization"],
     },
     {
-      icon: Shield,
-      title: "Cybersecurity",
-      description: "Comprehensive security solutions to protect your business from evolving cyber threats.",
-      features: ["Threat Detection", "Security Audits", "Compliance Management"],
-    },
-    {
-      icon: Database,
-      title: "Data Management",
-      description: "Secure data storage, backup solutions, and disaster recovery planning for business continuity.",
-      features: ["Data Backup", "Disaster Recovery", "Database Optimization"],
-    },
-    {
-      icon: Network,
-      title: "Network Infrastructure",
-      description: "Design, implement, and maintain robust network solutions for seamless connectivity.",
-      features: ["Network Design", "WiFi Solutions", "VPN Setup"],
-    },
-    {
-      icon: Cpu,
-      title: "IT Infrastructure",
-      description: "End-to-end infrastructure management including servers, storage, and virtualization.",
-      features: ["Server Management", "Virtualization", "Hardware Procurement"],
-    },
-    {
-      icon: HeadphonesIcon,
-      title: "24/7 Support",
-      description: "Round-the-clock technical support and monitoring to keep your business running smoothly.",
-      features: ["Remote Support", "On-site Assistance", "Proactive Monitoring"],
+      icon: Wrench,
+      title: "IT Support",
+      description: "Reliable technical assistance to keep systems running efficiently and resolve day-to-day operational issues.",
+      features: ["Help Desk Support", "System Troubleshooting", "On-site Assistance"],
     },
     {
       icon: Settings,
       title: "IT Consulting",
-      description: "Strategic IT planning and consulting to align technology with your business goals.",
-      features: ["Strategy Planning", "Technology Roadmap", "Digital Transformation"],
+      description: "Strategic guidance to align technology investments with business goals, growth plans, and operational needs.",
+      features: ["Technology Roadmaps", "Digital Strategy", "Process Optimization"],
     },
     {
-      icon: FileSearch,
-      title: "Compliance & Audit",
-      description: "Ensure regulatory compliance and conduct thorough IT audits for risk management.",
-      features: ["GDPR Compliance", "ISO Certification", "Risk Assessment"],
+      icon: Shield,
+      title: "Cybersecurity",
+      description: "Security-first services to protect infrastructure, applications, and data from modern cyber threats.",
+      features: ["Threat Prevention", "Security Assessments", "Compliance Support"],
     },
   ];
 

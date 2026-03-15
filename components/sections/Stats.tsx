@@ -8,14 +8,14 @@ const Stats = () => {
   const stats = [
     {
       icon: Users,
-      value: "500+",
+      value: "50+",
       label: "Active Clients",
       description: "Businesses trust us",
       color: "from-blue-500 to-blue-600",
     },
     {
       icon: Award,
-      value: "1,200+",
+      value: "100+",
       label: "Projects Completed",
       description: "Successfully delivered",
       color: "from-primary to-primary-600",
@@ -29,7 +29,7 @@ const Stats = () => {
     },
     {
       icon: Clock,
-      value: "15+",
+      value: "5+",
       label: "Years Experience",
       description: "In the industry",
       color: "from-purple-500 to-purple-600",

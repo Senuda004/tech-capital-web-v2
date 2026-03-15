@@ -7,8 +7,8 @@ import { Target, Award, Users, TrendingUp } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Users, value: "500+", label: "Happy Clients" },
-    { icon: Award, value: "15+", label: "Years Experience" },
+    { icon: Users, value: "50+", label: "Happy Clients" },
+    { icon: Award, value: "5+", label: "Years Experience" },
     { icon: TrendingUp, value: "99%", label: "Success Rate" },
     { icon: Target, value: "24/7", label: "Support Available" },
   ];
@@ -27,7 +27,7 @@ const About = () => {
                 </h2>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                   Tech Capital Managed Services is your trusted partner for comprehensive 
-                  IT solutions. With over 15 years of experience, we specialize in delivering 
+                  IT solutions. With over 5 years of experience, we specialize in delivering 
                   innovative technology services that drive business growth and operational efficiency.
                 </p>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
