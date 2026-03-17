@@ -96,6 +96,12 @@ const Contact = () => {
       link: "tel:+94773861585",
     },
     {
+      icon: Phone,
+      title: "Phone",
+      content: "+94 71 943 4569",
+      link: "tel:+94719434569",
+    },
+    {
       icon: Mail,
       title: "Email",
       content: "info@techcapital.com",
@@ -104,7 +110,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "5 B 65 R, Raddolugama, Sri Lanka",
+      content: "No: 28/13, 1st Lane, Factory Road, Kandawatta, Kapuwatta, Ja-Ela, Sri Lanka",
       link: "https://maps.google.com",
     },
   ];

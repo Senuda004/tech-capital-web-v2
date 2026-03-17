@@ -65,11 +65,15 @@ const Footer = () => {
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2 text-gray-300">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>5 B 65 R, Raddolugama, Sri Lanka</span>
+                <span>No: 28/13, 1st Lane, Factory Road, Kandawatta, Kapuwatta, Ja-Ela, Sri Lanka</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="w-4 h-4 text-primary" />
                 <span>+94 (77) 386 1585</span>
+              </div>
+              <div className="flex items-center space-x-2 text-gray-300">
+                <Phone className="w-4 h-4 text-primary" />
+                <span>+94 (71) 943 4569</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="w-4 h-4 text-primary" />
